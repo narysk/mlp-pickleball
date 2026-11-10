@@ -385,7 +385,10 @@
       );
 
       sends += 1;
-
+      
+      document.getElementById("retry").textContent =
+        "Logo request sent (" + sends + ")";
+      
       statusEl.textContent =
         "Logo data sent to Challonge (attempt " +
         sends +
